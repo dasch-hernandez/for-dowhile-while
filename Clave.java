@@ -4,8 +4,12 @@ import java.util.Scanner;
         public static void main(String [] a) {
 
             Scanner leer = new Scanner(System.in);
-            int claveValida = 9999;
+            int claveValida;
             int claveUsuario;
+
+            System.out.print("Ingrese su clave: ");
+            claveValida = leer.nextInt();
+            
             do {
             System.out.println("Introduce una clave de 4 digitos: ");
             claveUsuario=leer.nextInt();
